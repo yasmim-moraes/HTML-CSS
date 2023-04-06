@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: lightpink;
+        }
+
+        .num{
+            text-align: right;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        anatomia para tabelas grandes
+        table
+        caption
+            thead
+             TR, TD, TH
+            tbody
+             TR, TD, TH
+            tfoot
+             TR, TD, TH
+    -->
+    <table>
+        <caption>População da unidades deferativas</caption>
+        <thead>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px">População</th>
+        </thead>
+    
+    <tbody>
+        <tr>
+            <td>São Paulo</td>
+            <td class="num">45 919 049</td>
+        </tr>
+        <tr>
+            <td>Minhas Gerais</td>
+            <td class="num">21 168 791</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">17 264 943</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <th scope="row">Total de Habidantes</th>
+        <td class="num">0000</td>
+    </tfoot>
+</table>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt esse cupiditate itaque nesciunt vel commodi ullam impedit, aliquid quidem repellendus, vitae pariatur eligendi alias velit perspiciatis! Animi sit reiciendis natus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam libero provident unde possimus molestias similique magnam sunt autem fugit laudantium aliquid officia debitis earum quia iusto quidem, incidunt neque soluta.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, quod accusamus. Adipisci ullam nostrum tenetur aliquid, officiis, atque numquam temporibus, tempore laborum totam provident ipsum magni suscipit quae saepe distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptate officiis similique, dolorem, odit suscipit maxime possimus, porro illo aut minima aliquid error pariatur magni accusantium tenetur voluptatibus soluta nostrum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis provident ullam in modi, asperiores cupiditate quod aut, autem culpa impedit assumenda quia dolore explicabo, officiis at itaque facere sequi. Numquam.
+        </p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit dolorem, facere hic praesentium a quo numquam consequatur aperiam nihil at corrupti cumque modi accusamus, ut unde omnis molestias! Neque, molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptates magnam, incidunt temporibus necessitatibus illum hic neque ullam rem quam labore harum? Quos explicabo facere dolor quaerat nobis! Modi, eos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio maxime laborum nihil architecto aliquam, natus voluptas! Corporis debitis enim sed cupiditate nesciunt maxime, harum, expedita facere incidunt similique, quidem iusto?</p>
+</body>
+</html>
